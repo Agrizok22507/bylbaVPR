@@ -6,7 +6,9 @@ This is just a project for testing, not for cheating.
 
 # Injection
 Execute this comand in browser console :
-```fetch('https://raw.githubusercontent.com/Agrizok22507/bylbaVPR/main/bylbaVPR.js').then(r=>r.text()).then(eval)```
+```javascript
+fetch('https://raw.githubusercontent.com/Agrizok22507/bylbaVPR/main/bylbaVPR.js').then(r=>r.text()).then(eval)
+```
 
 # RU 🇷🇺
 Просто чит-меню для сайта впр (sdamgia)
@@ -15,4 +17,6 @@ Execute this comand in browser console :
 
 # Инжект
 Выполните эту команду в консоле браузера :
-```fetch('https://raw.githubusercontent.com/Agrizok22507/bylbaVPR/main/bylbaVPR.js').then(r=>r.text()).then(eval)```
+```javascript
+fetch('https://raw.githubusercontent.com/Agrizok22507/bylbaVPR/main/bylbaVPR.js').then(r=>r.text()).then(eval)
+```
