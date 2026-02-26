@@ -4,7 +4,7 @@ function notification(text) {
     const notif = document.createElement('div');
     notif.textContent = text;
     notif.id = 'notification'
-    notif.style.cssText = 'position: fixed; top: 20px; right: -300px; background: #333; color: white; border: 2px solid #666; padding: 15px; border-radius: 0; font-family: sans-serif; z-index: 9999; transition: right 0.3s ease, opacity 0.3s ease; opacity: 0; border-radius: 3px;';
+    notif.style.cssText = 'position: fixed; top: 20px; right: -300px; background: #333; color: white; border: 2px solid #666; padding: 15px; font-family: sans-serif; z-index: 9999; transition: right 0.3s ease, opacity 0.3s ease; opacity: 0; border-radius: 3px;';
     document.body.appendChild(notif);
     setTimeout(() => {
         notif.style.right = '20px';
@@ -54,7 +54,7 @@ function makeAllResponses(value) {
     } else if (value === "false") {
         var resp = document.querySelectorAll(`td[style="text-align: center; background: ${respBackground}; letter-spacing: 2px;"]`);
         resp.forEach(element => {
-            element.innerText = Math.floor(Math.random() + Math.random());
+            element.innerText = Math.floor(Math.random() * 101);
             element.style.background = hexToRGB('#ffc0c0');
         });
         respBackground = hexToRGB('#ffc0c0');
@@ -72,13 +72,13 @@ function makeAllResponses(value) {
 
 function panic() {
     navigator.clipboard.writeText(Math.floor(Math.random() + Math.random()));
-    document.getElementById('bylbavprMenu').remove();
-    document.getElementById('notification').remove();
-    document.getElementById('btnTogglebylbavprMenu').remove();
+    document.getElementById('bylbavprMenu')?.remove();
+    document.getElementById('notification')?.remove();
+    document.getElementById('btnTogglebylbavprMenu')?.remove();
 }
 
 function copyCode() {
-    navigator.clipboard.writeText("fetch('https://raw.githubusercontent.com/Agrizok22507/bylbaVPR/main/bylbaVPR.js').then(r=>r.text()).then(eval)");
+    navigator.clipboard.writeText("fetch('https://gist.githubusercontent.com/Agrizok22507/476f3f618a6e998928f8c3408a34119b/raw/e075f62bdb76dae2d4e5a6d251769e01ec1810f1/bylbaVPR.js').then(r=>r.text()).then(eval)");
     notification("Code successfully was copied")
 }
 
