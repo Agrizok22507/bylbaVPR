@@ -78,7 +78,7 @@ function panic() {
 }
 
 function copyCode() {
-    navigator.clipboard.writeText("fetch('https://github.com/Agrizok22507/bylbaVPR/blob/main/bylbaVPR.js').then(r=>r.text()).then(eval)");
+    navigator.clipboard.writeText("fetch('https://raw.githubusercontent.com/Agrizok22507/bylbaVPR/main/bylbaVPR.js').then(r=>r.text()).then(eval)");
     notification("Code successfully was copied")
 }
 
