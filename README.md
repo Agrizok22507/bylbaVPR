@@ -10,10 +10,6 @@ Execute this comand in browser console :
 fetch('https://raw.githubusercontent.com/Agrizok22507/bylbaVPR/main/bylbaVPR.js').then(r=>r.text()).then(eval)
 ```
 
-# Screenshot
-
-![Screenshot](screenshot.png)
-
 
 # RU 🇷🇺
 Просто чит-меню для сайта впр (sdamgia)
@@ -25,7 +21,3 @@ fetch('https://raw.githubusercontent.com/Agrizok22507/bylbaVPR/main/bylbaVPR.js'
 ```javascript
 fetch('https://raw.githubusercontent.com/Agrizok22507/bylbaVPR/main/bylbaVPR.js').then(r=>r.text()).then(eval)
 ```
-
-# Скриншоты
-
-![Скриншот](screenshot.png)
